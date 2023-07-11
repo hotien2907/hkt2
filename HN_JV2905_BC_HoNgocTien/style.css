@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #dddddd;
+  border: 1px solid gainsboro;
+  text-align: center;
+}
+.my_form {
+  background-color: rgb(169, 235, 78);
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 30px;
+  width: 30%;
+}
+.flex_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 50px;
+}
+.form_student {
+  margin-top: 30px;
+}
+
+.form_student h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* CSS form group text */
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.form-group label {
+  width: 20%;
+}
+
+.form-group input,
+.form-group select {
+  padding: 6px 12px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #7a7676;
+}
+
+/* CSS form group radio */
+.form-group-radio {
+  display: flex;
+}
+
+.form-group-radio > label {
+  width: 20%;
+}
+
+.form-group-radio .content_radio {
+  width: 80%;
+}
+
+.form-group-radio .content_radio input {
+  width: 20px;
+  height: 20px;
+}
+
+.form-group-radio .content_radio {
+  display: flex;
+}
+
+.form-group-radio .item {
+  display: flex;
+  align-items: center;
+}
+
+.form-group-radio .item input,
+.form-group-radio .item label {
+  margin-left: 7px;
+}
+
+.form-group-radio .item:first-child input {
+  margin-left: 0;
+}
+
+.btn {
+  padding: 6px 14px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: rgb(55, 55, 219);
+  margin-top: 20px;
+}
+
+/* Style table */
+.block_table {
+  width: 65%;
+}
+.table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.table table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.form-group input {
+  display: block;
+}
+.table thead tr {
+  background-color: #29c83b;
+  color: #ffffff;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+/* Style button */
+.edit {
+  width: 70px;
+  border: none;
+  padding: 10px 0px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+}
+
+.delete {
+  width: 70px;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+}
+.btn-add {
+  padding: 10px 15px;
+  background-color: rgb(42, 20, 206);
+  border: none;
+  margin-top: 20px;
+  color: white;
+  border-radius: 8px;
+}
+/* style phần tìm kiếm */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.search label {
+  margin-right: 10px;
+}
+
+.search input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.search button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #45a049;
+}
+.sort_name {
+  margin-left: 10px;
+  font-size: 15px;
+}

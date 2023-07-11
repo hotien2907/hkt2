@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex_item">
+        <form class="my_form">
+          <div class="form_student">
+            <h2>Thông tin học viên</h2>
+            <div class="form-group">
+              <label for="name">Họ và Tên</label>
+              <input
+                type="text"
+                value=""
+                id="name"
+                placeholder="Nhập họ và tên"
+              />
+              <span class="error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" value="" id="email" placeholder="Nhập email" />
+
+              <p class="error"></p>
+            </div>
+            <div class="form-group">
+              <label for="phone">Số điện thoại</label>
+              <input
+                type="text"
+                value=""
+                id="phone"
+                placeholder="Nhập số điện thoại"
+              />
+
+              <p class="error"></p>
+            </div>
+
+            <!-- Thông tin quê quán -->
+            <div class="form-group">
+              <label for="address">Quê quán</label>
+              <input
+                type="text"
+                value=""
+                id="address"
+                placeholder="Nhập quê quán"
+              />
+              <p class="error"></p>
+            </div>
+
+            <!-- phần radio -->
+            <div class="form-group-radio">
+              <label for="">Giới tính</label>
+
+              <div class="content_radio">
+                <div class="item">
+                  <input
+                    id="nam"
+                    type="radio"
+                    value="Nam"
+                    name="gender"
+                    class="gender_choose"
+                    checked
+                  />
+                  <label for="nam">Nam</label>
+                </div>
+
+                <div class="item">
+                  <input
+                    id="nu"
+                    type="radio"
+                    value="Nữ"
+                    name="gender"
+                    class="gender_choose"
+                  />
+                  <label for="nu">Nữ</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- phần submit button -->
+            <div class="button">
+              <button class="btn-add" type="submit">Lưu Lại</button>
+            </div>
+          </div>
+        </form>
+        <div class="block_table">
+          <h1 style="text-align: center">Danh sách học viên</h1>
+          <table class="table">
+            <div class="search">
+              <label>Tìm kiếm học viên</label>
+              <input type="text" id="input_search" name="search" />
+              <button id="btn_search">Search</button>
+            </div>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>
+                  <span>Họ tên</span>
+                  <i class="fa-sharp fa-solid fa-sort sort_name"></i>
+                </th>
+                <th>Email</th>
+                <th>Số điện thoại</th>
+                <th>Quê quán</th>
+                <th>Giới tính</th>
+                <th>Hành động</th>
+              </tr>
+            </thead>
+            <tbody class="shows_table"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
